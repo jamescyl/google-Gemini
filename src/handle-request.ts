@@ -34,7 +34,7 @@ export default async function handleRequest(request: NextRequest & { nextUrl?: U
   // "https://generativelanguage.googleapis.com/v1beta3/models/text-bison-001:generateText?key={YOUR_KEY}"
 
   //const url = new URL(pathname, "https://generativelanguage.googleapis.com");
-  const url = new URL(pathname, "https://api.deepseek.com");
+  const url = new URL(pathname, "https://api.deepseek.com/v1");
   searchParams.delete("_path");
 
   searchParams.forEach((value, key) => {
